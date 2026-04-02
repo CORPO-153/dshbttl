@@ -38,7 +38,7 @@ export const SettingsPage = () => {
                   className="w-full bg-surface-container-lowest border-none ring-1 ring-outline-variant/20 rounded-lg py-3 px-4 font-mono text-sm focus:ring-primary transition-all text-primary"
                   readOnly
                   type="password"
-                  defaultValue="734912056:AAFd8eR-N2v7Y2zX-k0oX9m8L4kP2wS1tG0"
+                  defaultValue="••••••••••••••••"
                 />
                 <button className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-on-surface-variant hover:text-white transition-colors">
                   <Eye className="w-4 h-4" />
