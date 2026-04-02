@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Space Grotesk", sans-serif;
+  
+  --color-surface: #0e0e0e;
+  --color-surface-container: #1a1a1a;
+  --color-surface-container-low: #131313;
+  --color-surface-container-high: #20201f;
+  --color-surface-container-highest: #262626;
+  --color-surface-bright: #2c2c2c;
+  --color-surface-variant: #262626;
+  
+  --color-primary: #84adff;
+  --color-primary-container: #6c9fff;
+  --color-primary-dim: #0070ea;
+  
+  --color-secondary: #83fc8e;
+  --color-secondary-dim: #75ed81;
+  
+  --color-tertiary: #fab0ff;
+  --color-tertiary-dim: #e48fed;
+  
+  --color-error: #ff716c;
+  --color-error-dim: #d7383b;
+  
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #adaaaa;
+  --color-outline: #767575;
+  --color-outline-variant: #484847;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+.glass-panel {
+  background: rgba(38, 38, 38, 0.6);
+  backdrop-filter: blur(12px);
+}
+
+.active-glow {
+  box-shadow: 0 0 12px 0 rgba(131, 252, 142, 0.2);
+}
+
+.pulse-glow {
+  box-shadow: 0 0 12px rgba(131, 252, 142, 0.4);
+}
+
+.status-glow-success {
+  box-shadow: 0 0 12px -2px rgba(131, 252, 142, 0.2);
+}
+
+.status-glow-error {
+  box-shadow: 0 0 12px -2px rgba(255, 113, 108, 0.2);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
